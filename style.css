@@ -1,0 +1,45 @@
+/* CONFIG */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+
+   /* COLORS */
+
+   --styled-tt: aqua;
+}
+
+body {
+   font-size: 1.6rem;
+   font-family: "Open Sans", sans-serif;
+}
+
+.hide {
+   display: none;
+}
+
+.show {
+   display: block;
+}
+
+/* MOBILE HEADER */
+header {
+   display: flex;
+   gap: 5rem;
+}
+
+h1 {
+   font-size: 2.4rem;
+}
+
+h1 .styled-txt {
+   color: var(--styled-tt);
+}
+
+img {
+   width: 4.5rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <!-- PRECONNECTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <!-- META -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive Bar</title>
+   <!-- STYLE -->
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="content-container">
+      <h1>Coding <span class="styled-txt">Addict</span></h1>
+
+      <div id="large-screen-content" class="hide">
+         <nav class="navigation-items">
+            <ul class="items">
+               <li class="home item">Home</li>
+               <li class="about item">About</li>
+               <li class="projects item">Projects</li>
+               <li class="contact item">Contact</li>
+            </ul>
+         </nav>
+   
+         <nav class="social-media">
+            <ul class="social-items">
+               <li class="linkedin">
+                  <img src="./assets/linkedin.png" alt="linkedin logo">
+               </li>
+               <li class="github">
+                  <img src="./assets/github.png" alt="github logo">
+               </li>
+            </ul>
+         </nav>
+      </div>
+      
+      <div id="small-screen-content" class="show">
+         <button class="menu-img">
+            <img src="./assets/hamburguer-menu.png" alt="icon menu">
+         </button>
+         <nav class="navigation-items hide">
+            <ul class="items">
+               <li class="home item">Home</li>
+               <li class="about item">About</li>
+               <li class="projects item">Projects</li>
+               <li class="contact item">Contact</li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+</body>
+</html>
