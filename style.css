@@ -11,10 +11,11 @@
    /* COLORS */
 
    --styled-tt: aqua;
+   --border-and-bg: #ffff;
 }
 
-body {
-   font-size: 1.6rem;
+body, button {
+   font-size: clamp(1.3rem, 1.6rem, 1vw);
    font-family: "Open Sans", sans-serif;
 }
 
@@ -26,38 +27,98 @@ body {
    display: block;
 }
 
+img {
+   width: clamp(2.6rem, 2.8rem, 3vw);
+   margin-top: 0.5rem;
+}
+
+button {
+   border: none;
+   background-color: var(--border-and-bg);
+   cursor: pointer;
+   transition: 0.2s;
+}
+
+button:hover {
+   color: var(--styled-tt);
+   transform: scale(1.05);
+}
+
+li {
+   list-style: none;
+}
 /* MOBILE HEADER */
 header {
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   gap: 5rem;
-   border-bottom: 0.2rem solid #ffff;
+   border-bottom: 0.2rem solid var(--border-and-bg);
    box-shadow: 0 0.2rem 0.5rem;
-   padding-bottom: 1rem;
+   padding: 1rem;
+}
+
+.tt-btns-container {
+   display: flex;
+   gap: 5rem;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 1rem 1rem;
 }
 
 h1 {
-   font-size: 2.6rem;
+   font-size: clamp(1.8rem, 2.4rem, 1vw);
 }
 
 h1 .styled-txt {
    color: var(--styled-tt);
 }
 
-img {
-   width: 3.2rem;
-   
+.navigation-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 0.2rem solid rgb(118, 139, 179);
+  padding: 1rem 0 0 1rem;
 }
 
-.menu-img {
-   border: none;
-   background-color: #ffff;
-}
-
-#small-screen-content {
+.items {
    display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-top: 1rem;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+
+/* AT RULES */
+@media (min-width: 588px) {
+
+ 
+   .tt-btns-container {
+      gap: 0;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+   }
+
+   .navs-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .navigation-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: none;
+      padding: 0;
+      margin: 0 12rem 0 2rem;
+    }
+
+   .items {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+   }
+
+   .social-items {
+      display: flex;
+      gap: 2rem;
+      
+   }
 }
