@@ -29,11 +29,16 @@ body {
 /* MOBILE HEADER */
 header {
    display: flex;
+   align-items: center;
+   justify-content: space-around;
    gap: 5rem;
+   border-bottom: 0.2rem solid #ffff;
+   box-shadow: 0 0.2rem 0.5rem;
+   padding-bottom: 1rem;
 }
 
 h1 {
-   font-size: 2.4rem;
+   font-size: 2.6rem;
 }
 
 h1 .styled-txt {
@@ -41,5 +46,18 @@ h1 .styled-txt {
 }
 
 img {
-   width: 4.5rem;
+   width: 3.2rem;
+   
+}
+
+.menu-img {
+   border: none;
+   background-color: #ffff;
+}
+
+#small-screen-content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 1rem;
 }
