@@ -14,13 +14,48 @@
 </head>
 <body>
    <header class="content-container">
-      <div class="tt-btns-container">
-         <h1>Coding <span class="styled-txt">Addict</span></h1>
-   
-         <div id="large-screen-content" class="">
-            <div class="navs-container">
+      <h1>Coding <span class="styled-txt">Addict</span></h1>
 
-               <nav class="navigation-items">
+      <div class="small-screen-nav">
+         <div class="btns-nav">
+            <button class="menu open">
+               <img src="./assets/hamburguer-menu.png" alt="icon menu open">
+            </button>
+
+            <button class="menu close hide">
+               <img src="./assets/close.png" alt="icon menu close">
+            </button>
+         </div>
+         
+         <nav class="small navigation-items">
+            <ul class="items">
+               <li class="home item">
+                  <button>
+                     Home
+                  </button>
+               </li>
+               <li class="about item">
+                  <button>
+                     About
+                  </button>
+               </li>
+               <li class="projects item">
+                  <button>
+                     Projects
+                  </button>
+               </li>
+               <li class="contact item">
+                  <button>
+                     Contact
+                  </button>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   
+         <div class="large-screen nav hide">
+
+               <nav class="large navigation-items">
                   <ul class="items">
                      <li class="home item">
                         <button>
@@ -56,44 +91,11 @@
                   </ul>
                </nav>
                
-            </div>
          </div>
 
-         <button class="menu open hide">
-            <img src="./assets/hamburguer-menu.png" alt="icon menu open">
-         </button>
-   
-         <button class="menu close hide">
-            <img src="./assets/close.png" alt="icon menu close">
-         </button>
-      </div>
+      </button>
       
-      <div id="small-screen-content" class="hide">
-         <nav class="navigation-items">
-            <ul class="items">
-               <li class="home item">
-                  <button>
-                     Home
-                  </button>
-               </li>
-               <li class="about item">
-                  <button>
-                     About
-                  </button>
-               </li>
-               <li class="projects item">
-                  <button>
-                     Projects
-                  </button>
-               </li>
-               <li class="contact item">
-                  <button>
-                     Contact
-                  </button>
-               </li>
-            </ul>
-         </nav>
-      </div>
+     
    </header>
 </body>
 </html>
