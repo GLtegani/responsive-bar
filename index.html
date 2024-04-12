@@ -13,7 +13,10 @@
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+   <!-- START HEADER -->
    <header class="content-container">
+
+      <!-- TITLE AND BUTTONS FOR MOBILE -->
       <div class="header-tt-btn">
          <h1 class="tt">Coding <span class="styled-txt">Addict</span></h1>
 
@@ -28,66 +31,66 @@
          </div>
       </div>
 
-      <nav class="small-navigation-items">
+      <!-- NAV MOBILE -->
+      <nav class="small-navigation-items hide">
          <ul class="items">
             <li class="home item">
-               Home
+               <a href="#">Home</a>
             </li>
             <li class="about item">
-               About
+               <a href="#">About</a>
             </li>
             <li class="projects item">
-               Projects
+               <a href="#">Projects</a>
             </li>
             <li class="contact item">
-               Contact
+               <a href="#">Contact</a>
             </li>
          </ul>
       </nav>
 
-
+      <!-- TABLETS AND DESKTOP AREA -->
       <div class="large-screen">
          <h2 class="tt">Coding <span class="styled-txt">Addict</span></h2>
+
+         <!-- NAV LARGE SCREEN -->
          <nav class="large-navigation-items">
             <ul class="items">
                <li class="home item">
-                  <button>
-                     Home
-                  </button>
+                  <a href="#">Home</a>
                </li>
                <li class="about item">
-                  <button>
-                     About
-                  </button>
+                  <a href="#">About</a>
                </li>
                <li class="projects item">
-                  <button>
-                     Projects
-                  </button>
+                  <a href="#">Projects</a>
                </li>
                <li class="contact item">
-                  <button>
-                     Contact
-                  </button>
+                  <a href="#">Contact</a>
                </li>
             </ul>
          </nav>
                
+         <!-- NAV SOCIAL MEDIA -->
          <nav class="social-media">
             <ul class="social-items">
                <li class="linkedin">
-                  <button>
+                  <a href="https://www.linkedin.com/in/gabriel-tegani/" target="_blank">
                      <img src="./assets/linkedin.png" alt="linkedin logo">
-                  </button>
+                  </a>
                </li>
                <li class="github">
-                  <button>
+                  <a href="https://github.com/GLtegani" target="_blank">
                      <img src="./assets/github.png" alt="github logo">
-                  </button>
+                  </a>
                </li>
             </ul>
          </nav>
       </div>
    </header>
+   <!-- END HEADER -->
+
+   <!-- SCRIPTS -->
+   <script src="./scripts/main.js" type="module"></script>
 </body>
 </html>
