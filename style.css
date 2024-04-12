@@ -20,11 +20,14 @@ body, button {
 }
 
 .hide {
-   display: none;
+   height: 0rem;
+   transition: 0.3s;
+   overflow: hidden;
 }
 
 .show {
-   display: block;
+   height: 13rem;
+   transition: 0.3s;
 }
 
 .styled-txt {
@@ -33,6 +36,12 @@ body, button {
 
 img {
    width: clamp(2.6rem, 2.8rem, 3vw);
+}
+
+.menu {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
 }
 
 button {
@@ -58,7 +67,7 @@ li {
 
 .tt {
    font-size: clamp(1.9rem, 2.5rem, 1vw);
-   margin-left: 0.8rem;
+   margin: 0 1rem;
 }
 
 .linkedin:hover, .github:hover {
@@ -84,14 +93,13 @@ header {
 }
 
 .small-navigation-items .items {
+   position: relative;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    justify-content: center;
    margin-top: 1rem;
-   transition: 0.2s;
    gap: 0.5rem;
-
 }
 
 .item {
@@ -124,8 +132,9 @@ header {
 
    .item {
       padding: 0rem;
-      width: 8vw;
+      width: 3vw;
       letter-spacing: 0rem;
+      margin-right: 4rem;
    }
 
    .item:hover {
